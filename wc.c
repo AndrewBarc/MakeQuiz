@@ -1,3 +1,9 @@
+/**
+* @file wc.c
+* @brief this program counts the characters, words and lines of something.
+* @author Andrew Barcus(Not the real author)
+* @date 10/11/18
+*/
 /* Sample implementation of wc utility. */
      
      #include <stdlib.h>
@@ -16,8 +22,12 @@
      count_t total_wcount = 0;
      count_t total_lcount = 0;
      
-     /* Print error message and exit with error status. If PERR is not 0,
-        display current errno status. */
+     /** 
+	* @param perr is an int *fmt is a character pointer and ap is a va_list opject
+	* Print error message and exit with error status. If PERR is not 0,
+        * display current errno status.
+	* @return nothing 
+	*/
      static void
      error_print (int perr, char *fmt, va_list ap)
      {
